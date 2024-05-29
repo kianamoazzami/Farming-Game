@@ -39,7 +39,7 @@ public class PlayerController2D : MonoBehaviour
         animator.SetBool("moving", moving);
 
         if (moving) {
-            lastMotionVector = new Vector2(horizontal, vertical).normalized; // why do we need to save this 
+            lastMotionVector = new Vector2(horizontal, vertical).normalized;
 
             animator.SetFloat("lastHorizontal", horizontal);
             animator.SetFloat("lastVertical", vertical);
